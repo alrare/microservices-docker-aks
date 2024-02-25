@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: microservice-libreria-pod
+  labels:
+    app: microservice-libreria
+    type: microservice
+spec:
+  containers:
+    - name: microservice-libreria-app
+      image: alrare/serviciosapilibreria:latest
+      ports:
+        - containerPort: 8080
+      env:
+        - name: MongoDb__ConnectionString
+          value: mongodb://alrare:$Alrare2024@mongo-service:27017
