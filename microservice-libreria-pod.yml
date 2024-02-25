@@ -13,4 +13,4 @@ spec:
         - containerPort: 8080
       env:
         - name: MongoDb__ConnectionString
-          value: mongodb://alrare:$Alrare2024@mongo-service:27017
+          value: mongodb://root:example@mongo-service:27017
