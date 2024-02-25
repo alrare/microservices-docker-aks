@@ -9,9 +9,9 @@ spec:
   containers:
     - name: mongo
       image: mongo:jammy
-      command:
-      - /bin/bash
-      - -c
+      #command:
+      #- /bin/bash
+      #- -c
       env:
       - name: MONGO_INITDB_ROOT_USERNAME
         value: "root"
