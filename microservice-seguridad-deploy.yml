@@ -25,4 +25,4 @@ spec:
             - containerPort: 8080
           env:
             - name: ConnectionStrings__ConexionDB
-              value: Server=mssql-service;Database=Seguridad;User=sa;Password=$Alrare2024
+              value: Server=mssql-service;Database=Seguridad;User=[user];Password=[pass]
